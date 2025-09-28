@@ -1,0 +1,210 @@
+
+body {
+  font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+
+
+  background:#F5F3EE;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+body, p, a, button {
+  font-family: 'Open Sans', sans-serif;
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+margin-bottom:60px; 
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff; 
+  margin: 5px 0;
+}
+
+.carousel-caption .btn {
+  margin-top: 10px;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); 
+  opacity: 0.5;      
+  width: 25px;
+  height: 25px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  opacity: 0.9; 
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  border: 1px solid #ffc107; 
+  background-color: rgba(255, 193, 7, 0.1); 
+}
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.btn-close {
+  outline: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;              
+  top: 50%;                
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: 45%;
+}
+
+.carousel-control-next {
+  left: 55%; 
+}
+.hero-section {
+  height: 60vh; 
+  background-image: url(../images/7afb9517-ed99-4ddb-a462-4c1c6ebd8260.jpg); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+   margin: 10px 0; 
+}
+.hero-section1 {
+  height: 60vh; 
+  background-image: url(../images/SPICE\ BEEF\ \ KEBAB.jpg); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+   margin: 10px 0; 
+}
+
+
+
+.thanks-card {
+  perspective: 1000px; 
+}
+.thanks-content {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+.thanks-content:hover {
+  transform: scale(0.95) translateY(10px) rotateX(10deg); 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.main-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  filter: brightness(0.7);
+  
+}
+.overlay {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+.person {
+  margin-top: 10px;
+}
+.person-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+  
+}
+
+
+.card {
+  position: relative;
+  overflow: hidden; 
+}
+
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 193, 7,0.2); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; 
+  z-index: 1; 
+}
+
+
+.card:hover::after {
+  opacity: 1;
+}
+
+
+.card-body {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.navbar-brand, .btn, .btn-warning, .btn-outline-light {
+  font-family: 'Playfair Display', serif;
+}
+
+
+.navbar-nav .nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+
+.dropdown-menu .dropdown-item {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+
+.form-control,
+input, 
+.form-control::placeholder {
+  font-family: 'Open Sans', sans-serif;
+}
+.modal-body img {
+  max-height: 250px; 
+  object-fit: cover;
+}
