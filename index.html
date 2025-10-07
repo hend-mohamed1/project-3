@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Urban Bite</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  <title>KEBAB HOUSE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
    <link rel="stylesheet" href="css/style.css">
   <style>
     .carousel-item img {height: 500px; object-fit: cover;}
@@ -26,15 +27,22 @@
 </head>
 <body>
 
+<div id="preloader">
+  <div class="loader-circle">
+    <i class="bi bi-knife"></i>
+    <i class="bi bi-fork"></i>
+  </div>
+  <h2 class="loading-text">Preparing your meal...</h2>
+</div>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
    <a class="navbar-brand" href="#">
   <img src="../project 3/images/img4-removebg-preview (1).png" width="40" alt="">
  <span style="font-size:1.1rem; font-weight:bold; text-shadow: 2px 2px 5px #ffc107;">
-  URBAN 
+KEBAB
   <span style="color:#ffc107; text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);">
-    BITE
+    HOUSE
   </span>
 </span>
 
@@ -56,7 +64,12 @@
               <li><a class="dropdown-item" href="#">Pasta</a></li>
               <li><a class="dropdown-item" href="#">Drinks</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item fw-bold text-center" href="#">More...</a></li>
+              <li>
+  <a class="dropdown-item fw-bold text-center" href="#" data-bs-toggle="modal" data-bs-target="#menuModal">
+    More...
+  </a>
+</li>
+
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
@@ -109,9 +122,7 @@
         <h2 class="text-light fw-bold mb-2" style="font-size:1.8rem;">Welcome</h2>
         <p class="text-light" 
            style="font-size:0.95rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-          Welcome to Urban Bite – Step into a World Of Gourmet Fast Food Crafted With Passion, Precision, And Premium Ingredients. 
-          Whether You’re Craving A Juicy Burger, Artisanal Pizza, Or A Fresh, Vibrant Salad – We’ve Redefined Fast Dining To Offer You Elegance, 
-          Flavor, And Comfort In Every Bite. Sit Back, Relax, And Let Us Serve You Excellence — Fast.
+         Welcome to Kebab House – Step into a World of Authentic Turkish Flavors Crafted with Passion, Tradition, and the Finest Ingredients. Whether You’re Craving Tender Grilled Kebabs, Freshly Baked Bread, or Rich, Aromatic Mezes – We’ve Redefined Turkish Dining to Bring You Warmth, Taste, and Comfort in Every Bite. Sit Back, Relax, and Let Us Serve You the True Taste of Turkey — Perfectly Grilled.
         </p>
         <a href="#" class="btn btn-warning btn-sm mt-2">Learn More</a>
       </div>
@@ -217,14 +228,22 @@
 </section>
 
 
-<div class="position-fixed top-50 end-0 translate-middle-y me-2">
-  <ul class="list-unstyled m-0">
-    <li><a href="#" class="btn btn-dark mb-2"><i class="bi bi-facebook"></i></a></li>
-    <li><a href="#" class="btn btn-dark mb-2"><i class="bi bi-twitter"></i></a></li>
-    <li><a href="#" class="btn btn-dark mb-2"><i class="bi bi-instagram"></i></a></li>
-    <li><a href="#" class="btn btn-dark mb-2"><i class="bi bi-linkedin"></i></a></li>
-  </ul>
+<div id="content" style="display:none;">
+  
+ 
+  
+  <div id="socialIcons" class="position-fixed top-50 end-0 translate-middle-y me-2" style="display:none;">
+    <ul class="list-unstyled m-0">
+      <li><a href="#" class="btn btn-dark mb-2"><i class="bi bi-facebook"></i></a></li>
+      <li><a href="#" class="btn btn-dark mb-2"><i class="bi bi-twitter"></i></a></li>
+      <li><a href="#" class="btn btn-dark mb-2"><i class="bi bi-instagram"></i></a></li>
+      <li><a href="#" class="btn btn-dark mb-2"><i class="bi bi-linkedin"></i></a></li>
+    </ul>
+  </div>
+
 </div>
+
+
 
 
 <div class="modal fade" id="copyModal" tabindex="-1">
@@ -573,6 +592,7 @@
   <div class="container text-center">
 
     <h3 class="fw-bold mb-5"  style="
+    
           display:inline-block;
           background: linear-gradient(135deg, #D2691E 0%, #FFD08C 100%);
           padding: 10px 20px;
@@ -792,7 +812,7 @@
         <div class="card shadow-sm">
           <div class="card-body">
             <h6 class="fw-bold text-primary">Subscribe Now</h6>
-            <img src="../project 3/images/WhatsApp Image 2025-09-25 at 12.57.04_fde0921c.jpg" class="img-fluid my-3" alt="WhatsApp" width="100">
+            <img src="../project 3/images/WhatsApp_Image_2025-09-25_at_12.57.04_fde0921c-removebg-preview.png" class="img-fluid my-3" alt="WhatsApp" width="100">
             <a href="#" class="d-block text-primary">Go To Link</a>
           </div>
         </div>
@@ -803,7 +823,7 @@
         <div class="card shadow-sm">
           <div class="card-body">
             <h6 class="fw-bold text-primary">Subscribe Now</h6>
-            <img src="../project 3/images/insta.jpg" class="img-fluid my-3" alt="Instagram" width="90">
+            <img src="../project 3/images/insta-removebg-preview.png" class="img-fluid my-3" alt="Instagram" width="90">
             <a href="#" class="d-block text-primary">Go To Link</a>
           </div>
         </div>
@@ -814,7 +834,7 @@
         <div class="card shadow-sm">
           <div class="card-body">
             <h6 class="fw-bold text-primary">Subscribe Now</h6>
-            <img src="../project 3/images/face.jpg" class="img-fluid my-3" alt="facebook" width="90">
+            <img src="../project 3/images/face-removebg-preview (1).png" class="img-fluid my-3" alt="facebook" width="90">
             <a href="#" class="d-block text-primary">Go To Link</a>
           </div>
         </div>
@@ -825,7 +845,7 @@
         <div class="card shadow-sm">
           <div class="card-body">
             <h6 class="fw-bold text-primary">Subscribe Now</h6>
-            <img src="../project 3/images/twit.jpg" class="img-fluid my-3" alt="Twitter" width="90">
+            <img src="../project 3/images/twit-removebg-preview.png" class="img-fluid my-3" alt="Twitter" width="90">
             <a href="#" class="d-block text-primary">Go To Link</a>
           </div>
         </div>
@@ -834,24 +854,32 @@
     </div>
   </div>
 </section>
-
-
 <footer class="bg-dark text-light pt-5 pb-3">
   <div class="container">
-    <div class="row text-center">
+
     
+    <div class="row text-center">    
       <div class="col-md-4 mb-3">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" width="60" alt="Logo">
+        <div class="fun-burgers text-center">
+         <p class="celebrate-text"></p>
+          <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" width="60" class="burger-icon" alt="Logo">
+        </div>
         <p class="mt-2"><em>Good Company</em></p>
       </div>
-    
+
       <div class="col-md-4 mb-3">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" width="60" alt="Logo">
+        <div class="fun-burgers text-center">
+          <p class="celebrate-text"></p>
+          <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" width="60" class="burger-icon" alt="Logo">
+        </div>
         <p class="mt-2"><em>Important Links</em></p>
       </div>
-   
+
       <div class="col-md-4 mb-3">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" width="60" alt="Logo">
+        <div class="fun-burgers text-center">
+         <p class="celebrate-text"></p>
+          <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" width="60" class="burger-icon" alt="Logo">
+        </div>
         <p class="mt-2"><em>Vision</em></p>
       </div>
     </div>
@@ -859,19 +887,18 @@
     <hr class="bg-light">
 
     <div class="row text-center">
-    
       <div class="col-md-4 mb-3">
         <p>Tel : 000-000-000</p>
         <p>Address : EGYPT</p>
         <p>Fax : 000-000-000</p>
       </div>
-     
+
       <div class="col-md-4 mb-3">
         <p><a href="#" class="text-warning text-decoration-none">Visit Us</a></p>
         <p><a href="#" class="text-warning text-decoration-none">Take A Look</a></p>
         <p><a href="#" class="text-warning text-decoration-none">Your Health Is More Important</a></p>
       </div>
-    
+
       <div class="col-md-4 mb-3">
         <p><a href="#" class="text-warning text-decoration-none">Services For All</a></p>
         <p><a href="#" class="text-warning text-decoration-none">Provide Best Services</a></p>
@@ -881,29 +908,147 @@
 
     <hr class="bg-light">
 
-  
     <div class="text-center">
       <p class="mb-0">© 2025 FoodExpress. All Rights Reserved. Designed By HEND MOHAMED MOHAMED
         <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" width="25" class="pulse" alt="Pizza Icon">
       </p>
     </div>
+
   </div>
 </footer>
 
 
-<style>
-  .pulse {
-    animation: pulseAnim 1.5s infinite;
-  }
+<canvas id="fireworksCanvas"></canvas>
 
-  @keyframes pulseAnim {
-    0% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.2); opacity: 0.8; }
-    100% { transform: scale(1); opacity: 1; }
-  }
+<style>
+#fireworksCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: none;
+}
+
+.fun-burgers {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  width: 180px;      
+  text-align: center;
+}
+
+
+.burger-icon {
+  width: 80px;
+  height: auto;
+  transition: transform 0.35s ease;
+  display: block;
+}
+
+.fun-burgers:hover .burger-icon {
+  transform: translateY(-6px) scale(1.04);
+}
+
+.celebrate-text {
+  display: none;
+  position: absolute;
+  top: -56px;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffeb3b;
+  text-shadow: 0 0 8px #000;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 8px 12px;
+  border-radius: 10px;
+  z-index: 80;
+  opacity: 0;
+  transition: opacity 240ms ease, transform 240ms ease;
+}
+
+.celebrate-text.show {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 </style>
 
 
+
+<div class="modal fade" id="menuModal" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+      <section class="py-3" style="background: linear-gradient(135deg, #8B2E1C 0%, #D2691E 50%, #FFD08C 100%); border-radius: 8px;">
+        <div class="modal-header border-0">
+          <h5 class="modal-title text-white fw-bold">
+            🍴 Our Menu
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body bg-light rounded">
+
+          <div class="container">
+            <div class="row g-3">
+
+              <div class="col-6">
+                <div class="p-3 border rounded bg-white shadow-sm menu-card">
+                  <h6 class="menu-title">🥗 Starters</h6>
+                  <ul class="list-unstyled mb-0">
+                    <li>Garlic Bread</li>
+                    <li>French Fries</li>
+                    <li>Nachos with Cheese</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-3 border rounded bg-white shadow-sm menu-card">
+                  <h6 class="menu-title">🍕 Main Dishes</h6>
+                  <ul class="list-unstyled mb-0">
+                    <li>Pizza</li>
+                    <li>Burgers</li>
+                    <li>Pasta</li>
+                    <li>Sandwiches</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-3 border rounded bg-white shadow-sm menu-card">
+                  <h6 class="menu-title">🥤 Drinks</h6>
+                  <ul class="list-unstyled mb-0">
+                    <li>Coffee</li>
+                    <li>Fresh Juice</li>
+                    <li>Soft Drinks</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-3 border rounded bg-white shadow-sm menu-card">
+                  <h6 class="menu-title">🍰 Desserts</h6>
+                  <ul class="list-unstyled mb-0">
+                    <li>Ice Cream</li>
+                    <li>Brownies</li>
+                    <li>Cheesecake</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -917,7 +1062,6 @@
     myModal.show();
   }
 
-
   document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
     var loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
@@ -925,7 +1069,124 @@
     var msgModal = new bootstrap.Modal(document.getElementById('loginMsgModal'));
     msgModal.show();
   });
+
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+      document.getElementById("content").style.display = "block";
+
+     
+      const socialIcons = document.getElementById("socialIcons");
+      if (socialIcons) socialIcons.style.display = "block";
+
+    }, 3000); 
+  });
+
+  
+  (function() {
+    const canvas = document.getElementById('fireworksCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let particles = [], raf = null;
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function rand(min, max){ return Math.random()*(max-min)+min; }
+
+    class Particle {
+      constructor(x,y,dx,dy,color,life){
+        this.x=x; this.y=y; this.vx=dx; this.vy=dy; this.color=color;
+        this.life = life; this.age=0; this.size = rand(1.8,3.5);
+      }
+      update(){
+        this.vy += 0.04;
+        this.x += this.vx; this.y += this.vy;
+        this.vx *= 0.995; this.vy *= 0.995;
+        this.age++;
+      }
+      draw(){
+        const a = Math.max(0, 1 - this.age/this.life);
+        ctx.globalAlpha = a;
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI*2);
+        ctx.fill();
+        ctx.globalAlpha = 1;
+      }
+    }
+
+    function spawnAt(x,y,count){
+      const colors = ['#FFD08C','#FFB74D','#FF8C00','#D2691E','#FFEB3B','#FFFFFF'];
+      for(let i=0;i<count;i++){
+        const angle = Math.random()*Math.PI*2;
+        const speed = rand(1.5,7.5);
+        const dx = Math.cos(angle)*speed;
+        const dy = Math.sin(angle)*speed;
+        const color = colors[Math.floor(Math.random()*colors.length)];
+        const life = Math.floor(rand(60,140));
+        particles.push(new Particle(x + rand(-8,8), y + rand(-8,8), dx, dy, color, life));
+      }
+    }
+
+    function animate(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.globalCompositeOperation = 'lighter';
+      for(let i=particles.length-1;i>=0;i--){
+        const p = particles[i];
+        p.update();
+        p.draw();
+        if (p.age > p.life || p.y > canvas.height + 50) particles.splice(i,1);
+      }
+      ctx.globalCompositeOperation = 'source-over';
+      if (particles.length>0) raf = requestAnimationFrame(animate);
+      else {
+        cancelAnimationFrame(raf);
+        raf = null;
+        canvas.style.display = 'none';
+      }
+    }
+
+    let running = false;
+    function runFireworks(centerX, centerY){
+      if (running) return;
+      running = true;
+      canvas.style.display = 'block';
+      let waves = 0;
+      const maxWaves = 6;
+      const waveInterval = setInterval(()=>{
+        for(let k=0;k<4;k++){
+          spawnAt(centerX + rand(-120,120), centerY + rand(-40,40), 60 + Math.floor(rand(0,60)));
+        }
+        waves++;
+        if (!raf) animate();
+        if (waves >= maxWaves){
+          clearInterval(waveInterval);
+          setTimeout(()=> { running = false; }, 1600);
+        }
+      }, 220);
+    }
+
+    document.querySelectorAll('.fun-burgers').forEach(fb => {
+      fb.addEventListener('click', () => {
+        const text = fb.querySelector('.celebrate-text');
+        const rect = fb.querySelector('.burger-icon').getBoundingClientRect();
+        const cx = rect.left + rect.width/2;
+        const cy = rect.top + rect.height/2;
+        text.classList.add('show');
+        runFireworks(cx, cy - 40);
+        setTimeout(() => text.classList.remove('show'), 4200);
+      });
+    });
+
+  })();
 </script>
+
 
 </body>
 </html>
